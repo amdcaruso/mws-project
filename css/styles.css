@@ -188,23 +188,27 @@ nav a, button, select {
     padding: 30px 15px 60px;
     text-align: center;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 #restaurants-list li {
+    display: inline-block;
     background-color: #fff;
     border: 1px solid #ccc;
     font-family: Arial,sans-serif;
-    min-height: 500px;
-    text-align: left;
-    max-width: 33%;
-    width: 33%;
+    /* min-height: 500px; */
+    /* text-align: left; */
+    /* flex: 1; */
+    width: 32%;
+    box-sizing: border-box;
 }
 
 #restaurants-list .restaurant-img {
     background-color: #ccc;
-    display: block;
+    /* display: block; */
     margin: 0;
     max-width: 100%;
     min-height: 248px;
@@ -213,7 +217,7 @@ nav a, button, select {
 
 #restaurants-list li h2 {
     color: #f18200;
-    display: block;
+    /* display: block; */
     font-family: Arial,sans-serif;
     font-size: 16pt;
     font-weight: 200;
@@ -231,18 +235,16 @@ nav a, button, select {
 }
 
 #restaurants-list li a {
-    display: block;
     background-color: orange;
-    /* border-bottom: 3px solid #eee; */
+    border-bottom: 3px solid #eee;
     color: #fff;
-    /* display: inline-block; */
+    /* align-items: stretch;  */
     font-size: 16pt;
-    margin: 15px 0 0;
-    padding: 8px 30px 10px;
+    /* margin: 15px 0 0; */
+    /* padding: 8px 30px 10px; */
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    flex: 1;
 }
 
 /* ====================== Restaurant Details ====================== */
